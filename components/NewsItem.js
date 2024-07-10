@@ -2,7 +2,7 @@ import React from "react";
 
 const NewsItem = () => {
   return (
-    <div className="flex border bg-white" style={{ width: "1420px", height: "199px" }}>
+    <div className="flex border bg-white" style={{ width: "931px", height: "199px" }}>
       {/* Left Container */}
       <div className="flex-1 flex p-4">
         <div className="mr-4 flex items-center">

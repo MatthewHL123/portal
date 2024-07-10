@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 .large-logo {
-  width: 402px; /* Lebar gambar */
-  height: 111px; /* Tinggi gambar */
+  width: 326px; /* Lebar gambar */
+  height: 90px; /* Tinggi gambar */
 }

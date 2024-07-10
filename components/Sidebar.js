@@ -1,46 +1,56 @@
 import React from "react";
-import { FaUser, FaTachometerAlt, FaUserTie, FaUsers, FaGraduationCap, FaBriefcase, FaFileAlt, FaLifeRing, FaCog, FaSignOutAlt } from "react-icons/fa";
+import Image from "next/image";
+import { BiSolidPencil, BiLogOut } from "react-icons/bi";
+import { IoIosSettings } from "react-icons/io";
+import { MdDashboard } from "react-icons/md";
+import { BsMortarboardFill } from "react-icons/bs";
+import { FaStamp } from "react-icons/fa";
 
 const Sidebar = () => {
   return (
-    <div className="bg-white w-64 h-screen shadow-md ml-24">
-      <div className="p-6">
-        <div className="flex items-center space-x-4">
-          <FaUser className="text-gray-500 w-10 h-10" />
+    <div className="p-2 ml-24" style={{ width: "330px", marginTop: "18px" }}>
+      <div className="border border-gray-400 bg-white rounded">
+        <div className="flex items-center space-x-4 mb-5 pl-6 pt-4" style={{ width: "297px" }}>
+          <Image src="/images/user.png" alt="Profile Picture" width={48} height={48} className="rounded-full" />
           <div>
-            <h2 className="text-lg font-semibold">Budi Prasetyo</h2>
-            <p className="text-gray-500 text-sm">Divisi Manajemen Risiko</p>
+            <h2 className="text-lg font-bold">Budi Prasetyo</h2>
+            <p className="text-base">Divisi Manajemen Risiko</p>
           </div>
         </div>
-        <div className="mt-8">
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaTachometerAlt className="w-5 h-5 mr-3" /> Dashboard
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaUserTie className="w-5 h-5 mr-3" /> Agent
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaUsers className="w-5 h-5 mr-3" /> User Management
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaGraduationCap className="w-5 h-5 mr-3" /> Human Capital
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaBriefcase className="w-5 h-5 mr-3" /> Learning Center
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaFileAlt className="w-5 h-5 mr-3" /> Recruitment
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaLifeRing className="w-5 h-5 mr-3" /> Audit
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaCog className="w-5 h-5 mr-3" /> Settings
-          </button>
-          <button className="w-full flex items-center text-left text-gray-700 p-2 hover:bg-gray-200 rounded">
-            <FaSignOutAlt className="w-5 h-5 mr-3" /> Logout
-          </button>
-        </div>
+
+        <button className="w-full text-base text-left mb-2 flex items-center pl-6">
+          <BiSolidPencil className="w-7 h-8 mr-2" style={{ color: "#0D5AA1" }} />
+          <span>Edit Profile</span>
+        </button>
+      </div>
+
+      <nav className="pt-5">
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <MdDashboard className="w-10 h-6 mr-3" style={{ color: "#F7A06C" }} />
+          <span>Dashboard</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <BsMortarboardFill className="w-10 h-6 mr-3 " style={{ color: "#F7A06C" }} />
+          <span>Learning Center</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <FaStamp className="w-10 h-6 mr-3" style={{ color: "#F7A06C" }} />
+          <span>Audit</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <MdDashboard className="w-10 h-6 mr-3" style={{ color: "F7A06C" }} />
+          <span>BRI Life News</span>
+        </a>
+      </nav>
+      <div className="border border-gray-400 bg-white rounded">
+        <button className="w-full text-left mb-2 flex items-center pl-6 pt-2">
+          <IoIosSettings className="w-7 h-8 mr-2" style={{ color: "#0D5AA1" }} />
+          <span>Settings</span>
+        </button>
+        <button className="w-full text-left mb-2 flex items-center pl-5">
+          <BiLogOut className="w-7 h-8 mr-3" style={{ color: "#0D5AA1" }} />
+          <span>Logout</span>
+        </button>
       </div>
     </div>
   );
