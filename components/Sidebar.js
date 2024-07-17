@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { BiSolidPencil, BiLogOut } from "react-icons/bi";
 import { IoIosSettings } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
@@ -17,15 +18,16 @@ const Sidebar = () => {
             <p className="text-base">Divisi Manajemen Risiko</p>
           </div>
         </div>
-
-        <button className="w-full text-base text-left mb-2 flex items-center pl-6">
-          <BiSolidPencil className="w-7 h-8 mr-2" style={{ color: "#0D5AA1" }} />
-          <span>Edit Profile</span>
-        </button>
+        <Link href="/editprofile" passHref>
+          <button className="w-full text-base text-left mb-2 flex items-center pl-6">
+            <BiSolidPencil className="w-7 h-8 mr-2" style={{ color: "#0D5AA1" }} />
+            <span>Edit Profile</span>
+          </button>
+        </Link>
       </div>
 
       <nav className="pt-5">
-        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+        <a href="/dashboardadmin" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
           <MdDashboard className="w-10 h-6 mr-3" style={{ color: "#F7A06C" }} />
           <span>Dashboard</span>
         </a>
@@ -38,7 +40,7 @@ const Sidebar = () => {
           <span>Audit</span>
         </a>
         <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
-          <MdDashboard className="w-10 h-6 mr-3" style={{ color: "F7A06C" }} />
+          <MdDashboard className="w-10 h-6 mr-3" style={{ color: "#F7A06C" }} />
           <span>BRI Life News</span>
         </a>
       </nav>

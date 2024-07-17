@@ -2,7 +2,7 @@ import React from "react";
 
 const EventCard = () => {
   return (
-    <div className="container mt-5 p-4 border border-gray-400 shadow-lg bg-white -ml-4" style={{ width: "970px" }}>
+    <div className="container mt-2 p-4 border border-gray-400 shadow-lg bg-white -ml-4" style={{ width: "1240px" }}>
       <div className="bg-[#0D5AA1] p-4 flex justify-between items-center">
         <h2 className="text-2xl font-semibold text-white">Events</h2>
         <button className="bg-[#F06E21] text-white px-2 py-1 rounded" style={{ width: "170px" }}>
