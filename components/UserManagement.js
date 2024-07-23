@@ -1,155 +1,43 @@
-import React from "react";
+import React from 'react';
 
 const UserManagement = () => {
+  const data = [
+    { Id: 1, Display: 'Budi Setyawan', Divisi: 'Manajemen Risiko', JenisAkun: 'Karyawan', SyncType: '' },
+    { Id: 2, Display: 'Budi Setyawan', Divisi: 'Kepatuhan', JenisAkun: 'Karyawan', SyncType: '' },
+    { Id: 3, Display: 'Budi Setyawan', Divisi: 'Akuntansi dan Keuangan', JenisAkun: 'Magang', SyncType: '' },
+    { Id: 4, Display: 'Budi Setyawan', Divisi: 'Asuransi Jiwa Kredit', JenisAkun: 'Karyawan', SyncType: '' },
+    { Id: 5, Display: 'Budi Setyawan', Divisi: 'Teknologi Informasi', JenisAkun: 'Freelance', SyncType: '' },
+  ];
+
   return (
-    <div className="container border border-gray-400 bg-white" style={{ width: "750px", height: "382px" }}>
+    <div className="w-[800px] h-[318px] border border-gray-400 bg-white rounded">
+      <a href="/usermanagementpage">
       <div className="bg-[#0D5AA1] p-4 flex justify-between items-center">
-        <h2 className="font-semibold text-white">User Management</h2>
-        <button className="bg-[#F06E21] text-white px-2 py-1 rounded" style={{ width: "137px", height: "35px" }}>Show All</button>
+          <h2 className="text-xl font-semibold text-white">User Management</h2>
+          <button className="bg-[#F06E21] text-white px-2 py-1" style={{ width: "200px", height: "32px" }}>Show All</button>
       </div>
-      
-      <div className="bg-blue grid grid-cols-4">
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#B4C8D9", color: "#0D5AA1"}}>
-            <label className="text-lg text-white-900" style={{color: "#FFFFFF"}}>Display Name</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#B4C8D9", color: "#0D5AA1"}}>
-            <label className="text-lg text-white-900" style={{color: "#FFFFFF"}}>Divisi</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#B4C8D9", color: "#0D5AA1"}}>
-            <label className="text-lg text-white-900" style={{color: "#FFFFFF"}}>Jenis Akun</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#B4C8D9", color: "#0D5AA1"}}>
-            <label className="text-lg text-white-900" style={{color: "#FFFFFF"}}>Sync Type</label>
-          </div>
-        </div>
-      </div>
+      </a>
 
-
-      <div className="bg-blue grid grid-cols-4">
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Budi Setyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Manajemen Resiko</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Karyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}></label>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="bg-blue grid grid-cols-4">
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Budi Setyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Manajemen Resiko</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Karyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}></label>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="bg-blue grid grid-cols-4">
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Budi Setyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Manajemen Resiko</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Karyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}></label>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="bg-blue grid grid-cols-4">
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Budi Setyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Manajemen Resiko</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Karyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#D5E5F2", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}></label>
-          </div>
-        </div>
-      </div>
-
-
-      <div className="bg-blue grid grid-cols-4">
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Budi Setyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Manajemen Resiko</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}>Karyawan</label>
-          </div>
-        </div>
-        <div className="flex flex-col">
-          <div type="text" className="border-{color} border-blue-800 p-3 focus:outline-none focus:border-blue-500" style={{ background: "#FFFFFF", color: "#0D5AA1"}}>
-            <label className="text-lg text-black-900" style={{color: "#000000"}}></label>
-          </div>
-        </div>
-      </div>
+      <table className="w-full border border-gray-300">
+        <thead>
+          <tr>
+            <th className="border border-gray-300 p-2 text-center bg-[#0D5AA1] text-white">Display Name</th>
+            <th className="border border-gray-300 p-2 text-center bg-[#0D5AA1] text-white">Divisi</th>
+            <th className="border border-gray-300 p-2 text-center bg-[#0D5AA1] text-white">Jenis Akun</th>
+            <th className="border border-gray-300 p-2 text-center bg-[#0D5AA1] text-white">Sync Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, index) => (
+            <tr key={index} className={index % 2 === 0 ? 'bg-gray-100' : 'bg-white'}>
+              <td className="p-2 text-center">{item.Display}</td>
+              <td className="p-2 text-center">{item.Divisi}</td>
+              <td className="p-2 text-center">{item.JenisAkun}</td>
+              <td className="p-2 text-center">{item.SyncType}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 };

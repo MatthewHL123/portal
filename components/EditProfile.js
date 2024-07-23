@@ -19,13 +19,13 @@ const EditProfile = () => {
               <div className="flex items-center space-x-4 mb-5 pl-4 pt-5">
                 <Image src="/images/user.png" alt="Profile Picture" width={118} height={188} className="rounded-full"/>
                 <div className="col-span-2 flex justify-center">
-                  <div className=" pl-6 mt-6 p-1 bg-white grid grid-cols-2 gap-5">
+                  <div className=" pl-2 mt-6 p-1 bg-white grid grid-cols-2 gap-5">
                     <div className="flex flex-col">
-                      <div className=" flex border border-blue-900 p-2 focus:outline-none focus:border-blue-1000 justify-center rounded" style={{ width: "390px", height: "40px", color: "#0D5AA1"}}>Change Picture</div>
+                      <button className=" flex border-4 border-blue-900 text-semibold p-2 focus:outline-none focus:border-blue-1000 justify-center rounded" style={{ width: "400px", height: "45px", color: "#0D5AA1"}}>Change Picture</button>
                     </div>
  
                     <div className="flex flex-col">
-                      <div className=" flex border border-red-900 p-2 focus:outline-none focus:border-red-1000 justify-center rounded" style={{ width: "390px", height: "40px", color: "#CC1307"}}>Delete Picture</div>
+                      <button className=" flex border-4 border-red-900 text-semibold p-2 focus:outline-none focus:border-red-1000 justify-center rounded" style={{ width: "400px", height: "45px", color: "#CC1307"}}>Delete Picture</button>
                     </div>
 
                     <div className="col-span-2 flex justify-center">
@@ -89,11 +89,7 @@ const EditProfile = () => {
             <div className="mt-2 p-1 bg-white rounded grid grid-cols-2 gap-3">
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-900">Gender</label>
-                <select id="gender" className="border border-gray-400 p-2 rounded focus:outline-none focus:border-gray-400">
-                  <option value=" "></option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
+                <div id="gender" className="border border-gray-400 p-2 rounded focus:outline-none focus:border-gray-400"></div>
               </div>
 
               <div className="flex flex-col">
