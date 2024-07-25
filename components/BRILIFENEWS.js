@@ -2,7 +2,7 @@ import React from "react";
 
 const BRILIFENEWS = () => {
   return (
-    <div className="container border border-gray-400 bg-white rounded mx-auto" style={{ width: "800px", height: "400px" }}>
+    <div className="container border border-gray-400 bg-white rounded mx-auto" style={{ width: "810px", height: "400px" }}>
       <a href="/newsmanagementpage">
       <div className="bg-[#0D5AA1] p-4 flex justify-between items-center">
         <h2 className="font-semibold text-white">BRI Life News</h2>
@@ -12,7 +12,7 @@ const BRILIFENEWS = () => {
       
       <div className="bg-white p-5 px-9">
         <div className="mb-6">
-          <h1 className="text-xl font-semibold mb-1" style={{ color: "#0D5AA1", fontSize: "25px" }}>Recenty Added</h1>
+          <h1 className="text-xl font-semibold mb-1" style={{ color: "#0D5AA1", fontSize: "20px" }}>Recenty Added</h1>
         </div>
 
         <div className="grid grid-cols-1 grid-cols-2 gap-4">

@@ -10,7 +10,7 @@ const UserManagement = () => {
   ];
 
   return (
-    <div className="w-[800px] h-[318px] border border-gray-400 bg-white rounded">
+    <div className="w-[810px] h-[318px] border border-gray-400 bg-white rounded">
       <a href="/usermanagementpage">
       <div className="bg-[#0D5AA1] p-4 flex justify-between items-center">
           <h2 className="text-xl font-semibold text-white">User Management</h2>

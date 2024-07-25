@@ -7,7 +7,7 @@ import { MdDashboard } from "react-icons/md";
 import { BsMortarboardFill } from "react-icons/bs";
 import { FaStamp } from "react-icons/fa";
 
-const Sidebar = () => {
+const SidebarAdmin = () => {
   return (
     <div className="p-2 ml-2" style={{ width: "410px", marginTop: "18px" }}>
       <div className="border border-gray-400 bg-white">
@@ -50,6 +50,18 @@ const Sidebar = () => {
           <span>Dashboard</span>
         </a>
         <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <span>Agent</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <span>User Management</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <span>Application Management</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
+          <span>Human Capital</span>
+        </a>
+        <a href="#" className=" py-2 px-4 text-white bg-[#0D5AA1] rounded mb-2 flex items-center">
           <BsMortarboardFill className="w-10 h-6 mr-3 " style={{ color: "#F7A06C" }} />
           <span>Learning Center</span>
         </a>
@@ -73,4 +85,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+export default SidebarAdmin;

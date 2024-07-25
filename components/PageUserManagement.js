@@ -1,4 +1,7 @@
 import React from "react";
+import { MdPersonAdd } from "react-icons/md";
+import { IoMdRefresh } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
 
 const PageUserManagement = () => {
     const data = [
@@ -15,7 +18,7 @@ const PageUserManagement = () => {
       ];
 
     return (
-        <div className="flex-1" style={{ width: "1250px", height: "56px" }}>
+        <div className="flex-1" style={{ width: "1235px", height: "56px" }}>
             <div className="bg-[#0D5AA1] p-4 flex justify-between items-center">
                 <h2 className="font-semibold text-white">User Management</h2>
             </div>
@@ -30,17 +33,26 @@ const PageUserManagement = () => {
 
                 <div className="flex justify-center p-3">
                     <div className="flex gap-3">
-                        <input className="border border-gray-400 bg-white p-2 justify-center rounded" style={{ width: "536px", height: "40px" }} placeholder="Search (Username, Division, etc...)"></input>
+                        <div className="flex mb-2 pl-2 pt-2 border border-gray-400 bg-white p-2 rounded" style={{ width: "536px", height: "40px" }}>
+                            <IoIosSearch className="w-5 h-5 mr-3" style={{ color: "gray" }}/>
+                            <input placeholder="Search (Username, Division, etc...)"></input>
+                        </div>
                         <a href="/createuserpage" >
-                        <button className="border border-gray-400 bg-white p-2 justify-center rounded" style={{ width: "280px", height: "40px" }}>Create User</button>
+                        <div className="flex items-center space-x-2 mb-2 pl-2 pt-2 border border-gray-400 bg-white p-2 rounded" style={{ width: '200px', height: '40px' }}>
+                            <MdPersonAdd className="w-11 h-7 mr-3" style={{ color: "gray" }} />
+                            <button className="focus:outline-none">Create User</button>
+                        </div>
                         </a>
-                        <select className="border border-gray-400 bg-white p-2 justify-center text-center rounded" style={{ width: "200px", height: "40px" }}>
+                        <select className="border border-gray-400 bg-white p-2 justify-center text-center rounded" style={{ width: "280px", height: "40px" }}>
                             <option value="" disabled selected>Select By</option>
                             <option value=""></option>
                             <option value=""></option>
                             <option value=""></option>
                         </select>
-                        <button className="border border-gray-400 bg-white p-2 justify-center rounded" style={{ width: "120px", height: "40px" }}>Refresh</button>
+                        <div className="flex mb-2 pl-2 pt-2 border border-gray-400 bg-white p-2 rounded" style={{ width: '120px', height: '40px' }}>
+                            < IoMdRefresh  className="w-6 h-6 mr-3" style={{ color: "gray" }} />
+                            <button className="focus:outline-none">Refresh</button>
+                        </div>
                     </div>
                 </div>
 

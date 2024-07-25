@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const PageCreateAccUser = () => {
   return (
-    <div className="flex-1">
+    <div className="flex-1" style={{ width: "1235px", height: "56px" }}>
       <header className="bg-[#0D5AA1] p-4 flex justify-between items-center">
         <h2 className="text-2xl font-semibold text-white">Edit Profile</h2>
       </header>
@@ -156,17 +156,28 @@ const PageCreateAccUser = () => {
           <hr className="border-gray-400 mb-2" />
 
           {["Kartu Tanda Pengenal (KTP)", "Nomor Pokok Wajib Pajak (NPWP)", "Employee Agreement Letter", "Certification (Optional)"].map((doc, index) => (
-            <div key={index} className="mt-2 p-1 bg-white rounded">
+            <div key={index} className="mt-2 p-1 bg-white">
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-600">{doc}</label>
-                <div className="flex justify-between items-center border border-gray-400 p-2 rounded">
+                <div className="relative flex justify-between items-center border border-gray-400 p-2 rounded cursor-pointer">
+                  <input
+                    type="file"
+                    accept=".pdf"
+                    className="absolute inset-0 opacity-0 cursor-pointer"
+                    id={`file-input-${index}`}
+                  />
                   <p className="m-0">Format File must be in .pdf</p>
-                  <button className="rounded text-white" style={{ backgroundColor: "#0D5AA1", width: "145px", height: "35px" }}>Upload Document</button>
+                  <label
+                    className="bg-blue-600 text-white rounded px-4 py-2 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer"
+                  >
+                    Upload Document
+                  </label>
                 </div>
               </div>
             </div>
           ))}
         </section>
+
 
         <section className="mt-6">
           <div className="grid md:grid-cols-2 gap-4">

@@ -4,10 +4,10 @@ import { FaBell, FaCircle } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white border-b border-gray-400 p-2 flex justify-between items-center " style={{ height: "75px" }}>
+    <nav className="bg-white border-b border-gray-400 p-2 flex justify-between items-center " style={{ height: "60px" }}>
       <div className="flex items-center ml-14">
         <div className="flex items-center">
-          <img src="/images/logo.png" alt="BRI Life" className="h-8" width="130" height="43" />
+          <img src="/images/logo.png" alt="BRI Life" className="h-8" width="130" height="48" />
           <span className="ml-2 text-2xl" style={{ fontSize: "28x", color: "#00529C" }}>
             Portal Apps
           </span>
